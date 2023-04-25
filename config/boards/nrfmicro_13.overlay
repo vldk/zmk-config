@@ -39,29 +39,32 @@
 						LED_COLOR_ID_RED
                         LED_COLOR_ID_BLUE>;
   };
-
-  
-  disp_oled: ssd1306@3c {
-	compatible = "solomon,ssd1306fb";
-	reg = <0x3c>;
-	label = "DISPLAY";
-	width = <128>;
-	height = <32>;
-	segment-offset = <0>;
-	page-offset = <0>;
-	display-offset = <0>;
-	multiplex-ratio = <31>;
-	segment-remap;
-	com-invdir;
-	com-sequential;
-	prechargep = <0x22>;
- };
 };
 
+
+&pro_micro_i2c {
+	status = "okay";
+
+	oled_custom: ssd1306@3c {
+		compatible = "solomon,ssd1306fb";
+		reg = <0x3c>;
+		label = "DISPLAY";
+		width = <128>;
+		height = <32>;
+		segment-offset = <0>;
+		page-offset = <0>;
+		display-offset = <0>;
+		multiplex-ratio = <31>;
+		segment-remap;
+		com-invdir;
+		com-sequential;
+		prechargep = <0x22>;
+	};
+};
 
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-        zephyr,display = &disp_oled;
+        zephyr,display = &oled_custom;
 	};
 };
