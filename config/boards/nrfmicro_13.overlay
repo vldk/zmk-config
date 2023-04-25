@@ -42,7 +42,7 @@
 };
 
 
-&pro_micro_i2c {
+/* &pro_micro_i2c {
 	status = "okay";
 
 	oled_custom: ssd1306@3c {
@@ -60,11 +60,11 @@
 		com-sequential;
 		prechargep = <0x22>;
 	};
-};
+}; */
 
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-        zephyr,display = &oled_custom;
+        zephyr,display = &oled;
 	};
 };
