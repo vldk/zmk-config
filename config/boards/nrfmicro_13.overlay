@@ -41,7 +41,7 @@
   };
 
   
-  oled: ssd1306@3c {
+  disp_oled: ssd1306@3c {
 	compatible = "solomon,ssd1306fb";
 	reg = <0x3c>;
 	label = "DISPLAY";
@@ -62,6 +62,6 @@
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-        zephyr,display = &oled;
+        zephyr,display = &disp_oled;
 	};
 };
