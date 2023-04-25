@@ -1,6 +1,12 @@
 {
   "id": "corne",
   "name": "Corne",
+  "layer_names": [
+    "default",
+    "lower",
+    "raise",
+    "adjust"
+  ],
   "layouts": {
     "default_transform": {
       "name": "default_transform",
