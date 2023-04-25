@@ -20,6 +20,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        TabQ_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
