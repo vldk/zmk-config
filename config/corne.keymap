@@ -29,6 +29,18 @@
         };
     };
 
+    behaviors {
+        td_media: tap_dance_media {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MEDIA";
+            #binding-cells = <0>;
+            bindings =
+                <&kp C_PLAY_PAUSE>,
+                <&kp C_NEXT>,
+                <&kp C_PREVIOUS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
