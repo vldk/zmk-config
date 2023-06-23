@@ -5,10 +5,10 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -83,10 +83,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB   &kp F1   &kp F2    &kp F3  &kp F4     &kp F5    &kp PRINTSCREEN  &kp LC(LEFT)     &kp UP  &kp RC(RIGHT)  &kp PG_UP  &kp LC(BSPC)
- &trans   &kp F6   &kp F7    &kp F8  &kp F9    &kp F10            &kp INS      &kp LEFT   &kp DOWN      &kp RIGHT  &kp PG_DN      &kp HOME
- &trans  &kp F11  &kp F12    &trans  &trans   &kp CAPS            &kp DEL      &kp PLUS   &kp LBRC       &kp RBRC   &kp PIPE       &kp END
-                           &kp RALT  &trans  &kp SPACE            &kp RET        &trans  &kp K_APP
+&kp TAB   &kp F1   &kp F2    &kp F3      &kp F4     &kp F5    &kp PRINTSCREEN  &kp LC(LEFT)     &kp UP  &kp LC(RIGHT)  &kp PG_UP  &kp LC(BSPC)
+ &trans   &kp F6   &kp F7    &kp F8      &kp F9    &kp F10            &kp INS      &kp LEFT   &kp DOWN      &kp RIGHT  &kp PG_DN      &kp HOME
+ &trans  &kp F11  &kp F12    &trans  &kp K_MUTE   &kp CAPS            &kp DEL      &kp PLUS   &kp LBRC       &kp RBRC   &kp PIPE       &kp END
+                           &kp RALT      &trans  &kp SPACE            &kp RET        &trans  &kp K_APP
             >;
         };
 
