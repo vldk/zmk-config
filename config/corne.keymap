@@ -39,6 +39,18 @@
         };
     };
 
+    macros {
+        // Windows sleep key
+        win_sleep: win_sleep {
+            wait-ms = <50>;
+            tap-ms = <5>;
+            compatible = "zmk,behavior-macro";
+            label = "WIN_SLEEP_KEY";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
